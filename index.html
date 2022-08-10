@@ -30,82 +30,87 @@
                     buttonhovercolor: '#142140',
                 },
                 backgroundImage: {
-                    'hero-pattern': "url('./src/images/group-african-paramedic-crew-doctors.jpg')",
+                    'right-split-dark-blue': "linear-gradient(to right, #f8f9fA 50% , #142140 50%);",
+                    'top-split-dark-blue': "linear-gradient(to bottom, #f8f9fA 52% , #142140 48%);"
                 }
             }
           }
         }
       </script>
+      <script src="./src/scripts/script.js"></script>
     <title>Natorum Panis Specialist Hospital</title>
 </head>
 <body class="font-poppins p-0 m-0 ">
     <!-- pt-2.5/ -->
     <nav class="w-full box-border mx-auto my-0">
-        <div class="mx-auto box-border py-2 w-11/12 flex flex-row items-center justify-between">
+        <div class="mx-auto box-border py-2 w-11/12 flex flex-row items-center justify-between relative">
             <div>
                 <a href="#" class="w-max flex items-center h-16">
                     <img class="h-full mr-2.5" src="./src/images/logo.png" alt="logo">
                     <span class="font-bold font-cormorantsc">Natorum Panis <br> Specialist Hospital</span>
                 </a>
             </div>
-            <ul class="flex text-sm font-semibold items-center flex-row box-border">
+            <ul class="text-sm font-semibold box-border absolute bottom-0 right-0 hidden sm:static sm:flex sm:flex-row sm:items-center">
                 <li>
-                    <a href="#" class="text-base text-center py-7 mx-4 hover:text-neutral-600 cursor-pointer text-navtextcolor border-b-2 border-navtextcolor">
+                    <a href="#" class="text-base text-center py-7 sm:mx-3 md:mx-4 hover:text-neutral-600 cursor-pointer text-navtextcolor border-b-2 border-navtextcolor">
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="text-base text-center py-7 mx-4 hover:text-navtextcolor cursor-pointer text-neutral-600 hover:border-b-2 hover:border-navtextcolor">
+                    <a href="#" class="text-base text-center py-7 sm:mx-3 md:mx-4 hover:text-navtextcolor cursor-pointer text-neutral-600 hover:border-b-2 hover:border-navtextcolor">
                         About Us
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="text-base text-center py-7 mx-4 hover:text-navtextcolor cursor-pointer text-neutral-600 hover:border-b-2 hover:border-navtextcolor">
+                    <a href="#" class="text-base text-center py-7 sm:mx-3 md:mx-4 hover:text-navtextcolor cursor-pointer text-neutral-600 hover:border-b-2 hover:border-navtextcolor">
                         Our Services
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="text-base text-center py-7 ml-4 hover:text-navtextcolor cursor-pointer text-neutral-600 hover:border-b-2 hover:border-navtextcolor">
+                    <a href="#" class="text-base text-center py-7 sm:ml-3 md:ml-4 hover:text-navtextcolor cursor-pointer text-neutral-600 hover:border-b-2 hover:border-navtextcolor">
                         Contact
                     </a>
                 </li>
             </ul>
+            <div class="flex sm:hidden">
+                <img src="./src/images/menu.png" id="menubtn" onclick="showSideBar()" class="w-10 h-10">
+                <img src="./src/images/cancel.png" id="closebtn" onclick="closeSideBar()" class="w-10 h-10 hidden">
+            </div>
         </div>
     </nav>
-    <div class="h-screen p-0 m-0 bg-cover bg-top-center bg-no-repeat" style="background-image: linear-gradient(rgba(29,47,87, 0.8),rgba(0,0,0, 0.7)),url('./src/images/hero.jpg')">
-        <div class="w-11/12 mx-auto h-full flex flex-col justify-center box-border">
-            <h1 class="mb-4 text-5xl text-white font-extrabold leading-tight">
-                Your Most <br> Devoted Lifelong <br> Health Companion
-            </h1>
-            <p class="w-4/6 text-slate-300 my-2.5 text-sm font-bold">
-                Through clinical excellence, we offer compassionate, patient-centered care that is morally and ethically sound. 
-                We make sure that what we do shows that we are genuinely your health partner.
-            </p>
-            <a class="rounded-md w-fit bg-primarythemecolor hover:bg-buttonhovercolor px-5 py-5 mt-4 text-sm text-white cursor-pointer">
-                <p>
-                    Schedule Appointment
+    <div>
+        <div class="h-screen p-0 m-0 bg-cover bg-center sm:bg-top-center bg-no-repeat" style="background-image: linear-gradient(rgba(29,47,87, 0.8),rgba(0,0,0, 0.7)),url('./src/images/hero.jpg')">
+            <div class="w-11/12 mx-auto h-full flex flex-col justify-center box-border">
+                <h1 class="text-3xl mb-4 text-white font-extrabold leading-tight sm:text-4xl md:text-5xl">
+                    Your Most <br> Devoted Lifelong <br> Health Companion
+                </h1>
+                <p class="text-sm text-slate-300 my-2.5 font-bold sm:w-5/6 md:w-4/6 ">
+                    Through clinical excellence, we offer compassionate, patient-centered care that is morally and ethically sound. 
+                    We make sure that what we do shows that we are genuinely your health partner.
                 </p>
-            </a>
+                <a class="text-sm rounded-md w-max bg-primarythemecolor hover:bg-buttonhovercolor px-5 py-5 mt-4 text-white cursor-pointer">
+                    <p>
+                        Schedule Appointment
+                    </p>
+                </a>
+            </div>
         </div>
         <div class="py-14 m-0 bg-contactcard">
-            <div class="w-11/12 h-96 mt-10 mx-auto flex items-center">
-                <!-- bg-hero-pattern -->
-            <!-- style="background-image: linear-gradient(rgba(29,47,87, 0.8),rgba(0,0,0, 0.7)),url('')" -->
-            
+            <div class="relative pt-8 w-11/12 mx-auto items-center md:flex md:h-96 md:mt-10">
                 <div class="h-full">
                     <img class="h-full" src="./src/images/group-african-paramedic-crew-doctors.jpg" alt="our team">
                 </div>
-                <div class="pl-8 h-full flex flex-col justify-center py-3 w-1/2 bg-contactcard box-border " >
-                    <p class="text-secondarythemecolor text-base font-semibold">About Us</p>
-                    <h2 class="text-4xl font-extrabold">
-                        We are <span class="text-primarythemecolor">Happy <br> to</span> serve you
+                <div class="h-full flex flex-col justify-center py-3 bg-contactcard box-border md:w-1/2 md:pl-8">
+                    <p class="absolute top-0 text-secondarythemecolor text-lg font-semibold md:static">About Us</p>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl text-center font-extrabold md:text-4xl md:text-left">
+                        We are <span class="text-primarythemecolor">Happy <br class="hidden md:block"> to</span> serve you
                     </h2>
                     <p class="mt-2.5 mb-3.5 text-sm text-infotextcolor">
                         No matter your healthcare needs, Natorum Panis Specialist Hospital makes every patient feel safe and cared for. 
                         We take great pleasure in providing each customer with individualized service that combines detailed knowledge and competence with warmth, encouragement, and comfort.
                     </p>
-                    <a href="#">
-                        <p class="w-fit rounded-md bg-primarythemecolor hover:bg-buttonhovercolor p-4 text-white text-sm">
+                    <a href="#" class="w-max rounded-md bg-primarythemecolor hover:bg-buttonhovercolor p-4 text-white text-sm">
+                        <p>
                             Learn More
                         </p>
                     </a>
@@ -115,12 +120,12 @@
         </div>
         <div class="py-14">
             <div class="w-11/12 mx-auto">
-                <h2 class="text-center text-4xl font-bold pb-2.5 text-primarythemecolor">Our services</h2>
-                <p class="text-center text-infotextcolor text-sm">
-                    Health Services We Provide
+                <h2 class="text-center text-2xl sm:text-3xl md:text-4xl font-bold pb-2.5 text-primarythemecolor">Our services</h2>
+                <p class="text-center text-infotextcolor text-secondarythemecolor text-sm">
+                    Health Care Services We Provide
                 </p>
-                <div class="my-10 flex flex-row justify-between">
-                    <div class="text-center bg-contactcard hover:bg-secondarythemecolor w-3/12 box-border px-4 py-10 rounded-lg group">
+                <div class="my-6 flex flex-wrap justify-center sm:justify-evenly md:justify-around ">
+                    <div class="text-center w-72 sm:w-64 bg-contactcard hover:bg-secondarythemecolor box-border px-2.5 py-10 mb-5 rounded-lg group "><!-- md:w-3/12 -->
                         <a href="#">
                             <div class="text-center pb-3 container relative z-30">
                                 <div class="h-12 w-12 bg-secondarythemecolor group-hover:bg-lightsecondarythemecolor absolute -top-1 rounded-full right-1/2 z-10"></div>
@@ -131,11 +136,11 @@
                                 Medical Checkup
                             </h3>
                             <p class="text-infotextcolor group-hover:text-slate-100 text-sm mx-auto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, neque, dolorem.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, dolorem.
                             </p>
                         </a>
                     </div>
-                    <div class="text-center bg-contactcard hover:bg-secondarythemecolor w-3/12 box-border px-4 py-10 rounded-lg group">
+                    <div class="text-center w-72 sm:w-64 bg-contactcard hover:bg-secondarythemecolor box-border px-4 py-10 mb-5 rounded-lg group ">
                         <a href="#">
                             <div class="text-center pb-3 container relative z-30">
                                 <div class="h-12 w-12 bg-secondarythemecolor group-hover:bg-lightsecondarythemecolor absolute -top-1 rounded-full right-1/2 z-10"></div>
@@ -146,11 +151,26 @@
                                 Patient Care
                             </h3>
                             <p class="text-infotextcolor group-hover:text-slate-100 text-sm mx-auto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, neque, dolorem.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, dolorem.
                             </p>
                         </a>
                     </div>
-                    <div class="text-center bg-contactcard hover:bg-secondarythemecolor w-3/12 box-border px-4 py-10 rounded-lg group">
+                    <div class="text-center w-72 sm:w-64 bg-contactcard hover:bg-secondarythemecolor box-border px-4 py-10 mb-5 rounded-lg group "><!-- md:w-3/12 -->
+                        <a href="#">
+                            <div class="text-center pb-3 container relative z-30">
+                                <div class="h-12 w-12 bg-secondarythemecolor group-hover:bg-lightsecondarythemecolor absolute -top-1 rounded-full right-1/2 z-10"></div>
+                                <img class="w-16 mx-auto relative z-50 group-hover:hidden" src="./src/images/medication_blue.png" alt="stethoscope">
+                                <img class="w-16 mx-auto relative z-50 hidden group-hover:block" src="./src/images/medication_white.png" alt="stethoscope">
+                            </div>
+                            <h3 class="my-4 text-lg font-bold group-hover:text-buttonhovercolor">
+                                Drug Supply
+                            </h3>
+                            <p class="text-infotextcolor group-hover:text-slate-100 text-sm mx-auto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, dolorem.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="text-center w-72 sm:w-64 bg-contactcard hover:bg-secondarythemecolor box-border px-4 py-10 mb-5 rounded-lg group ">
                         <a href="#">
                             <div class="text-center pb-3 container relative z-30">
                                 <div class="h-12 w-12 bg-secondarythemecolor group-hover:bg-lightsecondarythemecolor absolute -top-1 rounded-full right-1/2 z-10"></div>
@@ -161,28 +181,29 @@
                                 Medical Checkup
                             </h3>
                             <p class="text-infotextcolor group-hover:text-slate-100 text-sm mx-auto">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, neque, dolorem.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, dolorem.
                             </p>
                         </a>
                     </div>
                 </div>
-                <a href="#">
-                    <p class="w-fit mx-auto text-center rounded-md bg-primarythemecolor hover:bg-buttonhovercolor p-4 text-white text-sm">
+                <a href="#" class="w-max flex mx-auto text-center rounded-md bg-primarythemecolor hover:bg-buttonhovercolor p-4 text-white text-sm">
+                    <p>
                         View More
                     </p>
                 </a>
             </div>
         </div>
-        <div class="flex flex-row bg-contactcard">
-               <div class="py-14 w-1/2 px-14">
-                    <h2 class="text-4xl font-bold pb-2.5">
+        <div class="bg-top-split-dark-blue md:bg-right-split-dark-blue">
+            <div class="md:flex md:w-11/12 md:mx-auto md:justify-between">
+                <div class="w-11/12 mx-auto py-14 md:w-1/2 md:pr-10">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                         <span class="text-primarythemecolor">Need to speak</span> with a Doctor<span class="text-secondarythemecolor">'</span>s
                         send us <span class="text-primarythemecolor">a message here</span>
                     </h2>
-                    <!-- <p class="text-infotextcolor text-sm mb-4">
+                     <p class="text-infotextcolor text-xs sm:text-sm mb-4">
                         Your privacy is our priority
-                    </p> -->
-                    <form action="#">
+                    </p> 
+                    <form class="text-sm sm:text-base" action="#">
                         <div>
                             <label class="mb-4 text-infotextcolor" for="fullname">What is your name?</label>
                             <br>
@@ -207,51 +228,52 @@
                             Send Message
                         </button>
                     </form>
-               </div> 
-               <div class="py-14 w-1/2 px-14 bg-buttonhovercolor text-white">
-                    <h3 class="my-4 text-2xl font-semibold">
+                </div>
+                <div class="w-11/12 mx-auto py-14 text-white md:pl-10 md:w-1/2">
+                    <h3 class="mb-4 font-semibold text-2xl sm:text-3xl md:text-4xl">
                         Need Assistance? <br>
-                        Our Medical Staff Is Available to Assist You.
+                        Our Medical Staff Is Available To You.
                     </h3>
-                    <p class="pb-6"> 
+                    <p class="text-sm pb-6"> 
                         We take great pleasure in providing each customer with individualized service that combines detailed knowledge and competence with warmth, encouragement, and comfort.
                     </p>
                     <div class="flex flex-col justify-between">
                         <a href="#" class="flex flex-nowrap items-center py-6 border-b border-custombordercolor cursor-pointer group">
                             <span class="mr-2">
-                                <img class="bg-secondarythemecolor group-hover:bg-white w-10 rounded-full p-2" src="./src/images/phone_icon.png" alt="phone">
+                                <img class="bg-secondarythemecolor group-hover:bg-white w-8 sm:w-10 rounded-full p-2" src="./src/images/phone_icon.png" alt="phone">
                             </span>
                             <span>
-                                <p class="text-sm group-hover:text-secondarythemecolor">Give us a call</p>
-                                <P class="font-bold text-base text-white group-hover:text-slate-300">+234 908 566 7892</P>
+                                <p class="text-xs sm:text-sm group-hover:text-secondarythemecolor">Give us a call</p>
+                                <P class="font-bold text-sm sm:text-base text-white group-hover:text-slate-300">+234 908 566 7892</P>
                             </span>
                         </a>
                         <a href="#" class="flex flex-nowrap items-center py-6 border-b border-custombordercolor cursor-pointer group">
                             <span class="mr-2">
-                                <img class="bg-secondarythemecolor group-hover:bg-white w-10 rounded-full p-2 " src="./src/images/mail_icon.png" alt="phone">
+                                <img class="bg-secondarythemecolor group-hover:bg-white w-8 sm:w-10 rounded-full p-2 " src="./src/images/mail_icon.png" alt="phone">
                             </span>
                             <span>
-                                <p class="text-sm group-hover:text-secondarythemecolor">Send us a message</p>
-                                <P class="font-bold text-base text-white group-hover:text-slate-300">support@npshospital.com</P>
+                                <p class="text-xs sm:text-sm group-hover:text-secondarythemecolor">Send us a message</p>
+                                <P class="font-bold text-sm sm:text-base text-white group-hover:text-slate-300">support@npshospital.com</P>
                             </span>
                         </a>
                         <a href="#" class="flex flex-nowrap items-center border-b border-custombordercolor py-6 cursor-pointer group">
                             <span class="mr-2">
-                                <img class="bg-secondarythemecolor group-hover:bg-white w-10 rounded-full p-2" src="./src/images/location_icon.png" alt="phone">
+                                <img class="bg-secondarythemecolor group-hover:bg-white w-8 sm:w-10 rounded-full p-2" src="./src/images/location_icon.png" alt="phone">
                             </span>
                             <span>
-                                <p class="text-sm group-hover:text-secondarythemecolor">Visit us</p>
-                                <P class="font-bold text-base text-white group-hover:text-slate-300">Lagos, Nigeria</P>
+                                <p class="text-xs sm:text-sm group-hover:text-secondarythemecolor">Visit us</p>
+                                <P class="font-bold text-sm sm:text-base text-white group-hover:text-slate-300">Lagos, Nigeria</P>
                             </span>
                         </a>
+                    </div>
+                </div>
             </div>
-               </div>
         </div>
-        <div class="py-4">
-            <p class="text-sm w-fit mx-auto text-primarythemecolor">
-                © 2022 Natorum Panis Specialist Hospital. All Rights Reserved
-            </p>
-        </div>
+    </div>
+    <div class="py-4 w-full mx-auto text-center">
+        <p class="text-sm text-primarythemecolor">
+            © 2022 Natorum Panis Specialist Hospital. All Rights Reserved
+        </p>
     </div>
 </body>
 </html>
