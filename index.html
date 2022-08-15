@@ -36,46 +36,51 @@
             }
           }
         }
-      </script>
-      <script src="./src/scripts/script.js"></script>
+    </script>
+    <script src="./src/scripts/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Natorum Panis Specialist Hospital</title>
 </head>
 <body class="font-poppins p-0 m-0 ">
     <!-- pt-2.5/ -->
     <nav class="w-full box-border mx-auto my-0">
-        <div class="mx-auto box-border py-2 w-11/12 flex flex-row items-center justify-between relative">
+        <div class="mx-auto box-border py-2 w-11/12 flex flex-row items-center justify-between relative z-50">
             <div>
                 <a href="#" class="w-max flex items-center h-16">
                     <img class="h-full mr-2.5" src="./src/images/logo.png" alt="logo">
                     <span class="font-bold font-cormorantsc">Natorum Panis <br> Specialist Hospital</span>
                 </a>
             </div>
-            <ul class="text-sm font-semibold box-border absolute bottom-0 right-0 hidden sm:static sm:flex sm:flex-row sm:items-center">
-                <li>
-                    <a href="#" class="text-base text-center py-7 sm:mx-3 md:mx-4 hover:text-neutral-600 cursor-pointer text-navtextcolor border-b-2 border-navtextcolor">
+            <ul id="nav_links" class="text-sm font-semibold box-border absolute top-[-400px] 
+                bg-white w-full sm:w-auto sm:static sm:flex sm:flex-row sm:items-center  
+                sm:opacity-100 transition-all ease-in duration-300 z-[-10]">
+                <li class="m-5 sm:m-0">
+                    <a href="#" class="text-base text-center sm:py-7 sm:mx-3 md:mx-4 hover:text-neutral-600 cursor-pointer text-navtextcolor sm:border-b-2 border-navtextcolor">
                         Home
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="text-base text-center py-7 sm:mx-3 md:mx-4 hover:text-navtextcolor cursor-pointer text-neutral-600 hover:border-b-2 hover:border-navtextcolor">
+                <li class="m-5 sm:m-0">
+                    <a href="#" class="text-base text-center sm:py-7 sm:mx-3 md:mx-4 hover:text-navtextcolor cursor-pointer text-neutral-600 sm:hover:border-b-2 hover:border-navtextcolor">
                         About Us
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="text-base text-center py-7 sm:mx-3 md:mx-4 hover:text-navtextcolor cursor-pointer text-neutral-600 hover:border-b-2 hover:border-navtextcolor">
+                <li class="m-5 sm:m-0">
+                    <a href="#" class="text-base text-center sm:py-7 sm:mx-3 md:mx-4 hover:text-navtextcolor cursor-pointer text-neutral-600 sm:hover:border-b-2 hover:border-navtextcolor">
                         Our Services
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="text-base text-center py-7 sm:ml-3 md:ml-4 hover:text-navtextcolor cursor-pointer text-neutral-600 hover:border-b-2 hover:border-navtextcolor">
+                <li class="m-5 sm:m-0">
+                    <a href="#" class="text-base text-center sm:py-7 sm:ml-3 md:ml-4 hover:text-navtextcolor cursor-pointer text-neutral-600 sm:hover:border-b-2 hover:border-navtextcolor">
                         Contact
                     </a>
                 </li>
             </ul>
-            <div class="flex sm:hidden">
-                <img src="./src/images/menu.png" id="menubtn" onclick="showSideBar()" class="w-10 h-10">
-                <img src="./src/images/cancel.png" id="closebtn" onclick="closeSideBar()" class="w-10 h-10 hidden">
-            </div>
+            <span class="text-4xl flex sm:hidden cursor-pointer">
+                <ion-icon class="text-buttonhovercolor" onclick="Togglemenu(this)" name="menu"></ion-icon>
+                <!-- <img src="./src/images/menu.png" id="menubtn" onclick="showSideBar()" class="w-10 h-10">
+                <img src="./src/images/cancel.png" id="closebtn" onclick="closeSideBar()" class="w-10 h-10 hidden"> -->
+            </span>
         </div>
     </nav>
     <div>
